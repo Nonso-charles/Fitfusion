@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitFusion - Gym Website</title>
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS for styling -->
+  
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar Section -->
+  <nav class="bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-800 shadow-lg">
+    <div class="max-w-screen-xl mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        
+        <!-- Brand Logo and Name -->
+        <div class="flex items-center space-x-3">
+          <img src="dumbbell.png" alt="FitFusion Logo" class="h-12 w-12 rounded-full">
+          <span class="text-3xl text-white font-extrabold">FitFusion</span>
+        </div>
+
+        <!-- Navbar Links -->
+        <div class="hidden md:flex space-x-8 text-white font-medium">
+          <a href="#home" class="hover:text-yellow-400 transition duration-300">Home</a>
+          <a href="#services" class="hover:text-yellow-400 transition duration-300">Services</a>
+          <a href="#trainers" class="hover:text-yellow-400 transition duration-300">Trainers</a>
+          <a href="#schedule" class="hover:text-yellow-400 transition duration-300">Schedule</a>
+          <a href="#contact" class="hover:text-yellow-400 transition duration-300">Contact</a>
+        </div>
+
+        <!-- Call to Action Button -->
+        <div class="hidden md:flex">
+          <a href="#join-us" class="bg-yellow-500 text-white py-2 px-6 rounded-full font-semibold text-lg hover:bg-yellow-600 transition duration-300">Join Us</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button class="text-white" id="mobile-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-8 w-8">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Dropdown -->
+      <div class="md:hidden" id="mobile-menu" style="display: none;">
+        <div class="flex flex-col items-center space-y-6 pt-6 pb-6 bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-800">
+          <a href="#home" class="text-white text-xl font-medium">Home</a>
+          <a href="#services" class="text-white text-xl font-medium">Services</a>
+          <a href="#trainers" class="text-white text-xl font-medium">Trainers</a>
+          <a href="#schedule" class="text-white text-xl font-medium">Schedule</a>
+          <a href="#contact" class="text-white text-xl font-medium">Contact</a>
+          <a href="#join-us" class="bg-yellow-500 text-white py-2 px-6 rounded-full font-semibold text-lg hover:bg-yellow-600 transition duration-300">Join Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- Services Section -->
+<section id="services" class="py-20 bg-gradient-to-r from-purple-600 to-indigo-800 text-white">
+    <div class="max-w-screen-xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-extrabold mb-4">Our Services</h2>
+            <p class="text-xl font-light">We provide a wide range of fitness services to help you achieve your fitness goals. Explore our services to find the best fit for you.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+            <!-- Service 1: Personal Training -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+                <img src="https://via.placeholder.com/400x250" alt="Personal Training" class="rounded-lg mb-6">
+                <h3 class="text-2xl font-semibold mb-4">Personal Training</h3>
+                <p class="text-lg text-gray-700">Get personalized training plans from certified trainers who will guide you every step of the way to achieve your fitness goals.</p>
+            </div>
+
+            <!-- Service 2: Group Classes -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+                <img src="https://via.placeholder.com/400x250" alt="Group Classes" class="rounded-lg mb-6">
+                <h3 class="text-2xl font-semibold mb-4">Group Classes</h3>
+                <p class="text-lg text-gray-700">Join our group classes for a fun, social, and motivating experience. We offer various classes including yoga, HIIT, and more.</p>
+            </div>
+
+            <!-- Service 3: Nutrition Coaching -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+                <img src="https://via.placeholder.com/400x250" alt="Nutrition Coaching" class="rounded-lg mb-6">
+                <h3 class="text-2xl font-semibold mb-4">Nutrition Coaching</h3>
+                <p class="text-lg text-gray-700">Achieve your fitness goals faster with customized nutrition plans. Our experts will help you make healthier food choices to fuel your body.</p>
+            </div>
+
+            <!-- Service 4: Online Training -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+                <img src="https://via.placeholder.com/400x250" alt="Online Training" class="rounded-lg mb-6">
+                <h3 class="text-2xl font-semibold mb-4">Online Training</h3>
+                <p class="text-lg text-gray-700">Train from anywhere with our online coaching program. Get access to virtual workouts and one-on-one training sessions from certified trainers.</p>
+            </div>
+
+            <!-- Service 5: Spa and Recovery -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+                <img src="https://via.placeholder.com/400x250" alt="Spa and Recovery" class="rounded-lg mb-6">
+                <h3 class="text-2xl font-semibold mb-4">Spa & Recovery</h3>
+                <p class="text-lg text-gray-700">Recover and relax with our spa services. Enjoy massages, cryotherapy, and other recovery treatments that will help you feel your best.</p>
+            </div>
+
+            <!-- Service 6: Corporate Wellness -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+                <img src="https://via.placeholder.com/400x250" alt="Corporate Wellness" class="rounded-lg mb-6">
+                <h3 class="text-2xl font-semibold mb-4">Corporate Wellness</h3>
+                <p class="text-lg text-gray-700">Improve your team's productivity and well-being with our corporate wellness programs, including on-site fitness classes and wellness coaching.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trainer Section -->
+  <section id="trainers" class="py-20 bg-gradient-to-r from-indigo-800 to-purple-600 text-white">
+    <div class="max-w-screen-xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-extrabold mb-4">Meet Our Expert Trainers</h2>
+        <p class="text-xl font-light">Our certified trainers are here to help you reach your fitness goals. Get to know the experts who will guide you on your fitness journey.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        
+        <!-- Trainer 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+          <img src="https://via.placeholder.com/400x250" alt="Trainer 1" class="rounded-lg mb-6">
+          <h3 class="text-2xl font-semibold mb-4">John Doe</h3>
+          <p class="text-lg text-gray-700 mb-4">Certified Personal Trainer | 5+ Years Experience</p>
+          <p class="text-gray-700 mb-4">Specializes in weight loss, strength training, and injury recovery. Passionate about empowering clients to reach their full potential.</p>
+          <a href="mailto:trainer1@fitfusion.com" class="text-indigo-800 hover:text-purple-600 font-semibold">Contact John</a>
+        </div>
+
+        <!-- Trainer 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+          <img src="https://via.placeholder.com/400x250" alt="Trainer 2" class="rounded-lg mb-6">
+          <h3 class="text-2xl font-semibold mb-4">Jane Smith</h3>
+          <p class="text-lg text-gray-700 mb-4">Yoga Instructor | Certified Nutrition Coach</p>
+          <p class="text-gray-700 mb-4">Expert in flexibility, mindfulness, and holistic health. Dedicated to helping clients improve their mental and physical well-being.</p>
+          <a href="mailto:trainer2@fitfusion.com" class="text-indigo-800 hover:text-purple-600 font-semibold">Contact Jane</a>
+        </div>
+
+        <!-- Trainer 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+          <img src="https://via.placeholder.com/400x250" alt="Trainer 3" class="rounded-lg mb-6">
+          <h3 class="text-2xl font-semibold mb-4">Mark Lee</h3>
+          <p class="text-lg text-gray-700 mb-4">HIIT Trainer | Crossfit Specialist</p>
+          <p class="text-gray-700 mb-4">Specializes in high-intensity interval training (HIIT) and crossfit. Focuses on building strength, speed, and agility through dynamic workouts.</p>
+          <a href="mailto:trainer3@fitfusion.com" class="text-indigo-800 hover:text-purple-600 font-semibold">Contact Mark</a>
+        </div>
+
+        <!-- Trainer 4 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+          <img src="https://via.placeholder.com/400x250" alt="Trainer 4" class="rounded-lg mb-6">
+          <h3 class="text-2xl font-semibold mb-4">Lisa Davis</h3>
+          <p class="text-lg text-gray-700 mb-4">Pilates Instructor | Core Strength Specialist</p>
+          <p class="text-gray-700 mb-4">Expert in pilates and core strength exercises. Works with clients of all levels to improve posture, balance, and flexibility.</p>
+          <a href="mailto:trainer4@fitfusion.com" class="text-indigo-800 hover:text-purple-600 font-semibold">Contact Lisa</a>
+        </div>
+
+        <!-- Trainer 5 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+          <img src="https://via.placeholder.com/400x250" alt="Trainer 5" class="rounded-lg mb-6">
+          <h3 class="text-2xl font-semibold mb-4">Emily Johnson</h3>
+          <p class="text-lg text-gray-700 mb-4">Strength & Conditioning Coach</p>
+          <p class="text-gray-700 mb-4">Dedicated to building strength and endurance with personalized training programs. Specializes in improving athletic performance and muscle gain.</p>
+          <a href="mailto:trainer5@fitfusion.com" class="text-indigo-800 hover:text-purple-600 font-semibold">Contact Emily</a>
+        </div>
+
+        <!-- Trainer 6 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+          <img src="https://via.placeholder.com/400x250" alt="Trainer 6" class="rounded-lg mb-6">
+          <h3 class="text-2xl font-semibold mb-4">Tom Harris</h3>
+          <p class="text-lg text-gray-700 mb-4">Boxing Trainer | Martial Arts Enthusiast</p>
+          <p class="text-gray-700 mb-4">Specializes in boxing, kickboxing, and martial arts. Focuses on improving strength, speed, and combat techniques in a fun, high-energy environment.</p>
+          <a href="mailto:trainer6@fitfusion.com" class="text-indigo-800 hover:text-purple-600 font-semibold">Contact Tom</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule Section -->
+  <section id="schedule" class="py-20 bg-gradient-to-r from-indigo-800 to-purple-600 text-white">
+      <div class="max-w-screen-xl mx-auto px-6">
+          <div class="text-center mb-12">
+              <h2 class="text-4xl font-extrabold mb-4">Our Class Schedule</h2>
+              <p class="text-xl font-light">Stay fit with our variety of gym classes. Check out our weekly schedule below and plan your workouts!</p>
+          </div>
+
+          <!-- Class Schedule Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+              <!-- Class 1 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+                  <h3 class="text-2xl font-semibold mb-4 text-indigo-800">Morning HIIT</h3>
+                  <p class="text-lg text-gray-700 mb-4">Start your day with high-intensity interval training! Burn fat, boost endurance, and get energized for the day.</p>
+                  <div class="flex justify-between items-center">
+                      <p class="text-sm text-gray-600">Mon, Wed, Fri</p>
+                      <p class="text-lg font-semibold">7:00 AM - 8:00 AM</p>
+                  </div>
+              </div>
+
+              <!-- Class 2 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+                  <h3 class="text-2xl font-semibold mb-4 text-indigo-800">Yoga Flow</h3>
+                  <p class="text-lg text-gray-700 mb-4">Relax and unwind with our Yoga Flow class. Focus on flexibility, breathing, and mindfulness in a calming environment.</p>
+                  <div class="flex justify-between items-center">
+                      <p class="text-sm text-gray-600">Mon, Thu</p>
+                      <p class="text-lg font-semibold">9:00 AM - 10:00 AM</p>
+                  </div>
+              </div>
+
+              <!-- Class 3 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+                  <h3 class="text-2xl font-semibold mb-4 text-indigo-800">Strength Training</h3>
+                  <p class="text-lg text-gray-700 mb-4">Build muscle and strength with our expert-led strength training class. Learn proper techniques and push your limits!</p>
+                  <div class="flex justify-between items-center">
+                      <p class="text-sm text-gray-600">Tue, Thu</p>
+                      <p class="text-lg font-semibold">5:00 PM - 6:00 PM</p>
+                  </div>
+              </div>
+
+              <!-- Class 4 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+                  <h3 class="text-2xl font-semibold mb-4 text-indigo-800">Boxing Basics</h3>
+                  <p class="text-lg text-gray-700 mb-4">Learn the fundamentals of boxing in a fun and energetic class. Perfect for beginners and those looking to improve technique.</p>
+                  <div class="flex justify-between items-center">
+                      <p class="text-sm text-gray-600">Mon, Wed</p>
+                      <p class="text-lg font-semibold">6:00 PM - 7:00 PM</p>
+                  </div>
+              </div>
+
+              <!-- Class 5 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+                  <h3 class="text-2xl font-semibold mb-4 text-indigo-800">Pilates Strength</h3>
+                  <p class="text-lg text-gray-700 mb-4">Increase core strength, flexibility, and posture with our Pilates Strength class. Low-impact, yet highly effective.</p>
+                  <div class="flex justify-between items-center">
+                      <p class="text-sm text-gray-600">Tue, Fri</p>
+                      <p class="text-lg font-semibold">8:00 AM - 9:00 AM</p>
+                  </div>
+              </div>
+
+              <!-- Class 6 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+                  <h3 class="text-2xl font-semibold mb-4 text-indigo-800">Zumba Dance</h3>
+                  <p class="text-lg text-gray-700 mb-4">Dance your way to fitness with our Zumba Dance class. Burn calories while having fun to upbeat music!</p>
+                  <div class="flex justify-between items-center">
+                      <p class="text-sm text-gray-600">Thu, Sat</p>
+                      <p class="text-lg font-semibold">10:00 AM - 11:00 AM</p>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </section>
+  
+  <!-- Contact Section -->
+<section id="contact" class="py-20 bg-gradient-to-r from-indigo-800 to-purple-600 text-white">
+    <div class="max-w-screen-xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-extrabold mb-4">Get In Touch</h2>
+            <p class="text-xl font-light mb-6">Have questions or ready to start your fitness journey? We’re here to help! Reach out to us and our team will get back to you as soon as possible.</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="lg:flex items-center justify-between gap-12">
+
+            <!-- Left Side: Contact Information -->
+            <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
+                <h3 class="text-3xl font-semibold text-indigo-200 mb-4">Contact Information</h3>
+                <p class="text-lg text-gray-200 mb-4">Phone: +1 (800) 123-4567</p>
+                <p class="text-lg text-gray-200 mb-4">Email: support@fitfusion.com</p>
+                <p class="text-lg text-gray-200 mb-4">Address: 123 Fitness Blvd, FitCity, FC 12345</p>
+
+                <div class="mt-8">
+                    <h4 class="text-2xl font-semibold text-indigo-200 mb-4">Follow Us</h4>
+                    <div class="flex justify-center space-x-6 text-2xl">
+                     <a href="#" class="text-gray-200 hover:text-indigo-400"><img src="tik-tok.png" alt="" class="w-10 h-10"></a>
+                <a href="#" class="text-gray-200 hover:text-indigo-400"><img src="social-media.png" alt="" class="w-10 h-10"></a>
+                <a href="#" class="text-gray-200 hover:text-indigo-400"><img src="instagram.png" alt="instagram.png" class="w-10 h-10"></a>
+                <a href="#" class="text-gray-200 hover:text-indigo-400"><img src="youtube.png" alt="" class="w-10 h-10"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Contact Form -->
+            <div class="lg:w-1/2 bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-3xl font-semibold text-indigo-800 mb-6">Send Us A Message</h3>
+                <form action="#" method="POST" class="space-y-6">
+
+                    <!-- Name Input -->
+                    <div>
+                        <label for="name" class="text-lg font-medium text-gray-700">Full Name</label>
+                        <input type="text" id="name" name="name" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                    </div>
+
+                    <!-- Email Input -->
+                    <div>
+                        <label for="email" class="text-lg font-medium text-gray-700">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                    </div>
+
+                    <!-- Message Input -->
+                    <div>
+                        <label for="message" class="text-lg font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full py-3 bg-indigo-800 text-white font-semibold rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="bg-gradient-to-r from-indigo-800 to-purple-600 text-white py-10">
+    <div class="max-w-screen-xl mx-auto px-6 lg:flex lg:items-center lg:justify-between">
+
+        <!-- Logo and Brand Name -->
+        <div class="text-center lg:text-left mb-8 lg:mb-0">
+            <a href="#" class="text-3xl font-extrabold text-white hover:text-indigo-400">
+                FitFusion
+            </a>
+            <p class="mt-2 text-lg text-gray-300">Your Fitness Journey Starts Here</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="text-center lg:text-left mb-8 lg:mb-0">
+            <h4 class="text-xl font-semibold text-white mb-4">Quick Links</h4>
+            <ul class="space-y-4">
+                <li><a href="#home" class="text-gray-200 hover:text-indigo-400">Home</a></li>
+                <li><a href="#services" class="text-gray-200 hover:text-indigo-400">Services</a></li>
+                <li><a href="#schedule" class="text-gray-200 hover:text-indigo-400">Schedule</a></li>
+                <li><a href="#contact" class="text-gray-200 hover:text-indigo-400">Contact</a></li>
+                <li><a href="#about" class="text-gray-200 hover:text-indigo-400">About Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="text-center lg:text-left">
+            <h4 class="text-xl font-semibold text-white mb-4">Follow Us</h4>
+            <div class="flex justify-center lg:justify-start space-x-6 text-2xl">
+                <a href="#" class="text-gray-200 hover:text-indigo-400"><img src="tik-tok.png" alt="" class="w-10 h-10"></a>
+                <a href="#" class="text-gray-200 hover:text-indigo-400"><img src="social-media.png" alt="" class="w-10 h-10"></a>
+                <a href="#" class="text-gray-200 hover:text-indigo-400"><img src="instagram.png" alt="instagram.png" class="w-10 h-10"></a>
+                <a href="#" class="text-gray-200 hover:text-indigo-400"><img src="youtube.png" alt="" class="w-10 h-10"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="mt-10 text-center text-gray-300">
+        <p>&copy; 2024 FitFusion. All Rights Reserved.</p>
+        <p class="text-sm">Designed and Developed with Passion</p>
+    </div>
+</footer>
+  <script>
+    // Toggle Mobile Menu
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.style.display = mobileMenu.style.display === 'none' || mobileMenu.style.display === '' ? 'block' : 'none';
+    });
+  </script>
+
+</body>
+</html>
